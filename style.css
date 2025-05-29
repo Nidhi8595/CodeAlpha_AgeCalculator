@@ -79,6 +79,7 @@ body.dark-mode .hero p {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 10px;
 }
 
 .hero button:hover {
@@ -298,3 +299,34 @@ body.dark-mode .toggle-container {
     transform: translateY(-150px);
   }
 }
+
+
+/* Responsive Design */
+@media (max-width: 900px){
+    .hero {
+        width: 95%;
+        max-width: 98vw;
+        padding: 40px 10px;
+        height:65%;
+    } 
+}
+
+@media (max-width: 600px) {
+    .hero {
+        width: 95%;
+        max-width: 98vw;
+        padding: 40px 20px;
+        height:65%;  
+      }
+}
+
+@media (max-width: 400px) {
+    .hero {
+        width: 95%;
+        max-width: 98vw;
+        padding: 40px 20px;
+        height:65%;  
+      }
+
+}
+

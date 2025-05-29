@@ -72,6 +72,7 @@ yearInput.addEventListener("keydown", (e) => {
 
 // Moving from Landing page to main section
 proceedBtn.addEventListener("click", () => {
+  history.pushState({ page: "calculator" }, "", "#calculator");
   calculatorSection.classList.remove("hidden");
   hero.classList.add("hidden");
 });
@@ -272,3 +273,12 @@ setInterval(generateStickers, 800);
 for (let i = 0; i < maxStickers / 3; i++) {
   setTimeout(createSticker, i * 500);
 }
+
+window.addEventListener("popstate", () => {
+  // Show landing page and hide calculator
+  calculatorSection.classList.add("hidden");
+  hero.classList.remove("hidden");
+});
+window.addEventListener("load", () => {
+  history.replaceState({ page: "landing" }, "", "#landing");
+});
