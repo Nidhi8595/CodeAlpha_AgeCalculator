@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="outer-container">
+        <label class="toggle-container">
+            🌞<input type="checkbox" id="darkModeToggle" />🌜
+        </label>
+
+        <header class="hero">
+            <h1 id="mainHeading">Welcome to AgeBloom</h1>
+            <p id="subHeading">Find out how many years, months, and days you've been alive!</p>
+            <button id="proceedBtn">Proceed</button>
+
+            <div id="floatingStickers"></div>
+
+            <div id="birthdayQuote" class="birthday-quote">
+                🎉 "Every year is a new adventure – celebrate yourself!" 🎂
+            </div>
+        </header>
+
+        <section class="container hidden" id="calculatorSection">
+            <h1>🎉 Your own Age Calculator</h1>
+            <p>Enter your date of birth and find out your exact age in years, months, and days!</p>
+
+            <form id="ageForm">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" placeholder="YYYY-MM-DD" />
+
+                <p style="margin: 10px 0; color: #282424;">OR enter manually:</p>
+
+                <div class="manual-inputs">
+                    <input type="number" id="day" placeholder="DD" min="1" max="31" />
+                    <input type="number" id="month" placeholder="MM" min="1" max="12" />
+                    <input type="number" id="year" placeholder="YYYY" min="1900" max="2100" />
+                </div>
+
+                <button type="submit">Calculate Age</button>
+            </form>
+
+            <button type="button" id="clearBtn">Check another</button>
+
+            <div id="result" class="fade-in"></div>
+            <div id="countdown" class="fade-in"></div>
+        </section>
+    </div>
+
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
