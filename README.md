@@ -1,6 +1,6 @@
-# CodeAlpha_AgeCalculator
-
 # AgeBloom – Age Calculator 🎉
+
+https://nidhi8595.github.io/CodeAlpha_AgeCalculator/
 
 **AgeBloom** is a modern, interactive web app that calculates your exact age in years, months, and days. Enjoy a delightful user experience with dark mode, animated stickers, confetti, and motivational birthday quotes!
 
@@ -49,6 +49,15 @@
 
 ---
 
+## Some Snapshots
+
+> ![alt text](<Screenshot (92).png>)
+> ![alt text](<Screenshot (93).png>)
+> ![alt text](<Screenshot (94).png>)
+> ![alt text](<Screenshot (95).png>)
+> ![alt text](<Screenshot (96).png>)
+> ![alt text](<Screenshot (97).png>)
+
 ## 📁 Project Structure
 
 - [`index.html`](index.html): Main HTML structure and UI.
@@ -59,4 +68,3 @@
 
 ## 🥳 Enjoy discovering your age with style!
 
-https://nidhi8595.github.io/CodeAlpha_AgeCalculator/
